@@ -2,8 +2,8 @@
 # Create your "Blog" class in this file.
 #
 class Blog
-	def initialize new_url = nil
-		@new_url = new_url
+	def initialize new_url
+		@new_url = url
 	end
 	def latest_title
 		new_html = Net::HTTP.get(URI.parse(@new_url))
